@@ -17,7 +17,7 @@ body {
 
 header {
   text-align: center;
-  background: #0077b6;
+  background: #023e8a;;
   color: #ffffff;
   padding: 1rem 0 0;
 }
@@ -72,7 +72,7 @@ h1 {
 
 h2 {
   padding: 5px;
-  background: #0077b6;
+  background: #023e8a;
   color: white;
   border-radius: 10px 10px 0 0;
   text-align: center;
@@ -110,7 +110,12 @@ h2:first-of-type {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #0077b6;
+  background: #023e8a;;
   color: #ffffff;
   margin-top: 2rem;
+}
+#currentyear,
+#lastModified {
+  color: white;
+  font-weight: bold;
 }
