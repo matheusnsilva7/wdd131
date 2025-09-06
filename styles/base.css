@@ -95,10 +95,11 @@ h2:first-of-type {
   grid-column: span 2;
 }
 
-.card img:nth-child(2){
-    max-width: 170px;
-    margin: 20px auto 0;
+.card img:nth-child(2) {
+  max-width: 170px;
+  margin: 20px auto 0;
 }
+
 .card img {
   max-width: 200px;
   border-radius: 10px;
