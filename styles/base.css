@@ -1,0 +1,110 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0f8ff; /* light background for readability */
+  color: #333; /* default text color */
+}
+
+header {
+  text-align: center;
+  background: #0077b6; /* bright blue header */
+  color: #ffffff;
+  padding: 1rem 0 0;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  background: #333;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: .7rem;
+}
+
+h1 {
+  grid-column: span 2;
+  text-align: center;
+  color: #023e8a; /* darker blue for main heading */
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  padding: 5px;
+  background: #0077b6;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  padding: 1rem;
+}
+
+h2:first-of-type {
+  grid-column: span 2;
+}
+
+.card img {
+  max-width: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0077b6;
+  color: #ffffff;
+  margin-top: 2rem;
+}
