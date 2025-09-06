@@ -11,13 +11,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f0f8ff; /* light background for readability */
-  color: #333; /* default text color */
+  background-color: #f0f8ff;
+  color: #333;
 }
 
 header {
   text-align: center;
-  background: #0077b6; /* bright blue header */
+  background: #0077b6;
   color: #ffffff;
   padding: 1rem 0 0;
 }
@@ -61,7 +61,7 @@ main {
 h1 {
   grid-column: span 2;
   text-align: center;
-  color: #023e8a; /* darker blue for main heading */
+  color: #023e8a;
 }
 
 .card {
