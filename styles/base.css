@@ -24,8 +24,9 @@ header {
 
 #course-title {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
+  padding: 0.7rem;
 }
 
 nav {
@@ -39,7 +40,7 @@ nav {
 nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   transition: background 0.3s ease;
 }
 
@@ -49,12 +50,12 @@ nav a:hover {
 
 main {
   max-width: 900px;
-  margin: 2rem auto 3rem;
+  margin: 3rem auto 4rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   justify-content: center;
   column-gap: 2rem;
-  row-gap: .7rem;
+  row-gap: 1.5rem;
 }
 
 h1 {
@@ -87,13 +88,16 @@ h2 {
 }
 
 .card p {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 h2:first-of-type {
   grid-column: span 2;
 }
 
+.card img:nth-child(2){
+    max-width: 170px;
+}
 .card img {
   max-width: 200px;
   border-radius: 10px;
