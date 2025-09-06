@@ -97,6 +97,7 @@ h2:first-of-type {
 
 .card img:nth-child(2){
     max-width: 170px;
+    margin: 20px auto 0;
 }
 .card img {
   max-width: 200px;
