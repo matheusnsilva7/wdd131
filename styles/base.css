@@ -83,7 +83,10 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
+hr{
+  grid-column: span 2;
+  margin: 0 1rem 0;
+}
 .card p {
   padding: 1rem 1.5rem;
 }
@@ -92,16 +95,18 @@ h2:first-of-type {
   grid-column: span 2;
 }
 
-.card img:nth-child(2) {
-  max-width: 170px;
-  margin: 20px auto 0;
-}
-
 .card img {
   max-width: 200px;
   border-radius: 10px;
   display: block;
   margin: 10px auto;
+}
+
+ul{
+  margin: 3rem 2rem;
+  display: grid;
+  align-items: center;
+  height: 200px;
 }
 
 footer {

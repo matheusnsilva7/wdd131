@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position:static;
+    width: auto;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+}
