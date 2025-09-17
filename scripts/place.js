@@ -8,11 +8,7 @@ const tempC = 8;
 const windKmh = 20;
 
 function calculateWindChill(T, v) {
-  return (
-    13.12 +
-    0.6215 * T -
-    11.37 * Math.pow(v, 0.16) +
-    0.3965 * T * Math.pow(v, 0.16)
+  return (13.12 + 0.6215 * T - 11.37 * Math.pow(v, 0.16) + 0.3965 * T * Math.pow(v, 0.16)
   );
 }
 

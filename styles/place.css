@@ -1,3 +1,16 @@
+:root {
+  --color-bg: #f9f9f9;
+  --color-text: #333;
+  --color-heading: #222;
+  --color-card-bg: #fff;
+  --color-card-shadow: rgba(0, 0, 0, 0.1);
+  --color-footer: #4d4d4d;
+  --color-accent: #0b4f6c;
+
+  --spacing: 1rem;
+  --radius: 8px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,16 +18,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-  padding: 1rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--spacing);
 }
 
 h1,
 h2 {
-  color: #222;
+  color: var(--color-heading);
   margin-bottom: 0.5rem;
 }
 
@@ -29,25 +42,25 @@ li {
 
 header {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 .hero {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 .hero img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 
 .card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 5px var(--color-card-shadow);
 }
 
 .weather img {
@@ -59,8 +72,8 @@ header {
 footer {
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 1rem;
-  color: #4d4d4d;
+  margin-top: var(--spacing);
+  color: var(--color-footer);
 }
 
 @media (min-width: 768px) {
@@ -71,6 +84,8 @@ footer {
   main {
     position: relative;
   }
+
+  /* Weather pseudo-element */
   .weather h2::after {
     content: " ⛅";
     margin-left: 0.5rem;
@@ -81,20 +96,22 @@ footer {
     top: 5rem;
     left: 8rem;
     width: 20rem;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
   }
+
   .weather {
     position: absolute;
     bottom: 5rem;
     right: 8rem;
     width: 20rem;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .mobile-only {
     display: none;
   }
-  .weather img{
+
+  .weather img {
     display: none;
   }
 }
