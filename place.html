@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="WDD 131 – Sao Paulo page"
+    />
+    <meta name="author" content="Matheus Nascimento silva" />
+    <title>São Paulo</title>
+    <link rel="stylesheet" href="styles/place.css" />
+  </head>
+  <body>
+    <header>
+      <h1>São Paulo</h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source media="(max-width: 599px)" srcset="images/sp-small.webp" />
+          <source
+            media="(min-width: 600px) and (max-width: 999px)"
+            srcset="images/sp-medium.webp"
+          />
+          <source media="(min-width: 1000px)" srcset="images/sp-large.webp" />
+          <img src="images/sp-large.webp" alt="Aerial view of São Paulo" />
+        </picture>
+      </section>
+
+      <section class="data card">
+        <h2>City Data</h2>
+        <ul>
+          <li><strong>Country:</strong> Brazil</li>
+          <li><strong>State:</strong> São Paulo</li>
+          <li><strong>Population:</strong> ~12 million</li>
+          <li><strong>Founded:</strong> 1554</li>
+          <li><strong>Main Language:</strong> Portuguese</li>
+          <li><strong>Known for:</strong> Finance & Culture</li>
+        </ul>
+      </section>
+
+      <section class="weather card">
+        <h2>Weather</h2>
+        <img
+          src="images/cloud-sun.svg"
+          alt="partly cloudy"
+          class="weather-icon mobile-only"
+        />
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">18</span> °C</li>
+          <li><strong>Wind speed:</strong> <span id="wind">12</span> km/h</li>
+          <li><strong>Wind chill:</strong> <span id="windchill">...</span></li>
+          <li><strong>Condition:</strong> Partly Cloudy</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> São Paulo Page</p>
+      <p>Last updated: <span id="lastmodified"></span></p>
+    </footer>
+
+    <script defer src="scripts/place.js"></script>
+  </body>
+</html>
