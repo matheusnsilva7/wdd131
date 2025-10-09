@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./images/Fitness.svg" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="icon" href="./images/Fitness.svg" >
     <meta
       name="description"
       content="Explore a variety of workouts to stay active and healthy. Save your favorites, generate new routines, and exercise anytime, anywhere."
-    />
-    <meta name="author" content="Matheus Nascimento silva" />
-    <title>Workouts — Fitness Hub</title>
+    >
+    <meta name="author" content="Matheus Nascimento silva" >
+    <title>Fitness Hub — Workouts</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
-    />
+    >
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/main.js" defer></script>
     <script src="scripts/workout.js" defer></script>
@@ -25,7 +25,7 @@
           ><img src="./images/logo.svg" alt="Fitness Hub" />
           <span>Fitness Hub</span>
         </a>
-        <nav class="main-nav" aria-label="Main Navigation">
+        <nav class="main-nav" id="nav-list" aria-label="Main Navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="workouts.html">Workouts</a></li>
@@ -111,14 +111,19 @@
       <section class="workout-generator favorites">
         <h2>Your Favorites</h2>
         <div id="favorites-list" class="favorites-list">
-          Your favorites list is empty. Generate a workout to add one!
+          <span
+            >Your favorites list is empty. Generate a workout to add one!</span
+          >
         </div>
       </section>
 
       <section class="workout-generator all-workouts">
         <h2>All Workouts</h2>
         <ul id="routines-list" class="routines-list">
-          Your workout library is empty. Generate a workout to get started!
+          <span
+            >Your workout library is empty. Generate a workout to get
+            started!</span
+          >
         </ul>
       </section>
     </main>
