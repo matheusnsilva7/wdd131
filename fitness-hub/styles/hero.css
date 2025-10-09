@@ -1,0 +1,20 @@
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(46, 134, 171, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero-inner h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-inner p {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
+}

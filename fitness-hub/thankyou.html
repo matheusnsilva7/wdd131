@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/Fitness.svg" />
+    <title>Contact — Fitness Hub</title>
+    <meta
+      name="description"
+      content="Thank you for reaching out to Fitness Hub! We’ve received your message and will get back to you soon."
+    />
+    <meta name="author" content="Matheus Nascimento silva" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo"
+          ><img src="./images/logo.svg" alt="Fitness Hub" />
+          <span>Fitness Hub</span>
+        </a>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main class="thankyou-container">
+      <h1>Thank You!</h1>
+      <p>
+        Your message has been successfully sent. We’ll get back to you soon 💪
+      </p>
+      <a href="index.html" class="btn-primary">Back to Home</a>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="currentyear"></span> Fitness Hub | Brazil</p>
+        <p><span id="lastmodified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

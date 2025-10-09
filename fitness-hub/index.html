@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/Fitness.svg" />
+    <meta
+      name="description"
+      content="Welcome to Fitness Hub — your go-to place for quick, effective, and accessible workouts. Get fit anywhere with routines designed for all levels."
+    />
+    <meta name="author" content="Matheus Nascimento silva" />
+    <title>Fitness Hub</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo"
+          ><img src="./images/logo.svg" alt="Fitness Hub" />
+          <span>Fitness Hub</span>
+        </a>
+        <nav class="main-nav" id="nav-list" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>Quick Workouts for Busy People</h1>
+          <p>
+            Short, effective routines to keep you moving, even on your busiest
+            days.
+          </p>
+          <a class="btn primary" href="workouts.html">Get a Random Workout</a>
+        </div>
+      </section>
+
+      <section class="features container">
+        <article>
+          <div>
+            <h2>15-Minute Routines</h2>
+            <p>
+              Ready-to-go sessions for morning, lunch, or evening. Stay
+              consistent and energized no matter your schedule.
+            </p>
+          </div>
+          <img
+            src="./images/FitnessTimer.webp"
+            alt="Fitness Timer"
+            loading="lazy"
+          />
+        </article>
+
+        <article>
+          <img
+            src="./images/MorningWorkout.webp"
+            alt="Workout Illustration"
+            loading="lazy"
+          />
+          <div>
+            <h2>Save Your Favorites</h2>
+            <p>
+              Mark workouts you like and revisit them anytime. Your favorite
+              routines stay saved in your browser—no account needed.
+            </p>
+          </div>
+        </article>
+
+        <article class="workout_article">
+          <h2>Accessible & Mobile-Friendly</h2>
+          <p>
+            Works seamlessly on any device. Whether on phone, tablet, or
+            desktop, your workouts are easy to follow.
+          </p>
+          <a class="btn primary" href="workouts.html">Start Workout</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="currentyear"></span> Fitness Hub | Brazil</p>
+        <p><span id="lastmodified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

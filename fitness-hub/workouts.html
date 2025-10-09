@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/Fitness.svg" />
+    <meta
+      name="description"
+      content="Explore a variety of workouts to stay active and healthy. Save your favorites, generate new routines, and exercise anytime, anywhere."
+    />
+    <meta name="author" content="Matheus Nascimento silva" />
+    <title>Workouts — Fitness Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/workout.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo"
+          ><img src="./images/logo.svg" alt="Fitness Hub" />
+          <span>Fitness Hub</span>
+        </a>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main class="container-workout">
+      <h1>Workouts</h1>
+
+      <section class="create-workout">
+        <h2 class="section-title">Create a New Workout</h2>
+        <form id="createWorkout" class="workout-form">
+          <div class="form-group">
+            <label for="exerciseName">Exercise Name</label>
+            <select id="exerciseName" name="exercise" required>
+              <option value="" disabled selected>Select an exercise...</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sets">Sets</label>
+              <input
+                id="sets"
+                type="number"
+                min="1"
+                max="6"
+                placeholder="3"
+                name="sets"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="reps">Reps</label>
+              <input
+                id="reps"
+                type="number"
+                min="1"
+                max="25"
+                placeholder="12"
+                name="reps"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" id="btnAddExercise" class="btn-primary">
+            Add Exercise
+          </button>
+        </form>
+      </section>
+
+      <section class="workout-list">
+        <h2 class="section-title">Build Your Workout</h2>
+        <div class="workout-card">
+          <ul class="exercise-list">
+            Select exercises to build your workout.
+          </ul>
+          <button id="save-btn" class="btn-primary">Save Workout</button>
+        </div>
+      </section>
+
+      <section class="workout-generator">
+        <h2 class="section-title">Random Workout Generator</h2>
+        <p class="section-desc">
+          Generate a short, quick workout you can do anywhere.
+        </p>
+        <button id="generate-btn" class="btn-primary">Generate Workout</button>
+      </section>
+
+      <section class="workout-generator favorites">
+        <h2>Your Favorites</h2>
+        <div id="favorites-list" class="favorites-list">
+          Your favorites list is empty. Generate a workout to add one!
+        </div>
+      </section>
+
+      <section class="workout-generator all-workouts">
+        <h2>All Workouts</h2>
+        <ul id="routines-list" class="routines-list">
+          Your workout library is empty. Generate a workout to get started!
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="currentyear"></span> Fitness Hub | Brazil</p>
+        <p><span id="lastmodified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

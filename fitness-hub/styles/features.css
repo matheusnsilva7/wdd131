@@ -1,0 +1,50 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 0;
+}
+
+.features article {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 1.25rem;
+  margin: 0 1rem;
+}
+
+article img {
+  width: 100%;
+  border-radius: 1rem;
+  opacity: 0.9;
+  margin: 0 auto;
+  grid-row: 2;
+}
+
+article h2 {
+  margin: 0 auto;
+}
+
+article h2::after {
+  background-color: var(--blue);
+  width: 4rem;
+  height: 4px;
+  content: "";
+  display: block;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+}
+
+article p {
+  margin: 2rem;
+}
+
+.workout_article p {
+  max-width: 30rem;
+  margin: 1rem auto;
+}
+
+.workout_article a {
+  text-align: center;
+  margin: 0 1rem;
+}

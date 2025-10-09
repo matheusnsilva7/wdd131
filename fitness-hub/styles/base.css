@@ -1,0 +1,27 @@
+:root {
+  --blue: #15587e;
+  --orange: #f2a541;
+  --dark: #333;
+  --bg: #fff;
+  --container: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--dark);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--container);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
