@@ -25,3 +25,7 @@ body {
   padding: 0 1rem;
   margin: 0 auto;
 }
+
+li {
+  list-style-type: none;
+}

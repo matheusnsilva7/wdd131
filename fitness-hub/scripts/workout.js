@@ -71,10 +71,10 @@ const renderWorkout = (workout, container, isFavorite = false) => {
 const renderAllWorkouts = () => {
   workoutsContainer.innerHTML = workoutList.length
     ? ""
-    : "<span>Your workout library is empty. Generate a workout to get started!</span>";
+    : "<li>Your workout library is empty. Generate a workout to get started!</li>";
   favoritesContainer.innerHTML = favoriteWorkouts.length
     ? ""
-    : "<span>Your favorites list is empty. Generate a workout to add one!</span>";
+    : "<li>Your favorites list is empty. Generate a workout to add one!</li>";
   workoutList.forEach((w) => renderWorkout(w, workoutsContainer, false));
   favoriteWorkouts.forEach((w) => renderWorkout(w, favoritesContainer, true));
 };
