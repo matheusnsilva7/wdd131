@@ -123,6 +123,9 @@ exerciseListContainer?.addEventListener("click", (e) => {
   const id = e.target.dataset.id;
   currentExercises = currentExercises.filter((ex) => ex.id !== id);
   renderCurrentExercises();
+  if (!currentExercises.length)
+    exerciseListContainer.innerHTML =
+      "<li>Select exercises to build your workout.</li>";
 });
 
 workoutForm?.addEventListener("submit", (e) => {
@@ -151,7 +154,8 @@ saveWorkoutBtn?.addEventListener("click", () => {
   renderCurrentExercises();
   saveToStorage();
   renderAllWorkouts();
-  exerciseListContainer.textContent = "Select exercises to build your workout.";
+  exerciseListContainer.innerHTML =
+    "<li>Select exercises to build your workout.</li>";
 });
 
 generateWorkoutBtn?.addEventListener("click", () => {
